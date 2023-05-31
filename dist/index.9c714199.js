@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",(function(e){const t=new Date("2023 Oct 15 14:00:00").getTime(),n=document.getElementById("contador");setInterval((function(){let e=(new Date).getTime(),o=t-e,a=Math.floor(o/864e5),d=Math.floor(o%864e5/36e5),r=Math.floor(o%864e5%36e5/6e4),c=Math.floor(o%864e5%36e5%6e4/1e3);n.innerHTML=`${a}d ${d}h ${r}m ${c}s`}),1e3)}));
+//# sourceMappingURL=index.9c714199.js.map
