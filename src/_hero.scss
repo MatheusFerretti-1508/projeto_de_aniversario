@@ -1,0 +1,100 @@
+.hero {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(./img/borderlands_3_happy_birthday_4k_hd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+
+    .container {
+        position: relative;
+        padding: 16px;
+        max-width: 960px;
+        width: 100%;
+        margin: 100px auto;
+        background: transparent;
+        backdrop-filter: blur(20px);
+        border: 2px solid #fff;
+        border-radius: 16px;
+        color: #fff;
+
+        .infos {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .link-confirma-presenca {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            margin-right: 0px;
+            padding: 8px;
+            border-radius: 16px;
+            color: #000;
+            background-color: yellow;
+
+            transition: transform .9s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        content: "";
+        opacity: .7;
+    }
+
+    #contador {
+        display: block;
+    }
+
+    &__text {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .informacoes {
+        
+        &__lista {
+            list-style: none;
+        }
+    }
+
+    @media (max-width:640px) {
+        padding: 40px 0;
+
+        &__text {
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+
+        .container {
+            max-width: 90%;
+            .infos {
+                display: block;
+            }
+    
+            .link-confirma-presenca {
+                margin: 0 auto;
+                max-width: 200px;
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

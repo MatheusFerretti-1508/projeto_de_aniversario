@@ -1,0 +1,146 @@
+.hero {
+  height: 100vh;
+  background-image: url("borderlands_3_happy_birthday_4k_hd.55afedc6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 64px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.hero .container {
+  max-width: 960px;
+  width: 100%;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  color: #fff;
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 16px;
+  margin: 100px auto;
+  padding: 16px;
+  position: relative;
+}
+
+.hero .container .infos {
+  justify-content: space-between;
+  display: flex;
+}
+
+.hero .container .link-confirma-presenca {
+  color: #000;
+  background-color: #ff0;
+  border-radius: 16px;
+  align-items: center;
+  margin-right: 0;
+  padding: 8px;
+  text-decoration: none;
+  transition: transform .9s;
+  display: flex;
+}
+
+.hero .container .link-confirma-presenca:hover {
+  transform: scale(1.1);
+}
+
+.hero:before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  opacity: .7;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero #contador {
+  display: block;
+}
+
+.hero__text {
+  text-align: center;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 56px;
+}
+
+.hero .informacoes__lista {
+  list-style: none;
+}
+
+@media (width <= 640px) {
+  .hero {
+    padding: 40px 0;
+  }
+
+  .hero__text {
+    margin: 24px 0;
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .hero .container {
+    max-width: 90%;
+  }
+
+  .hero .container .infos {
+    display: block;
+  }
+
+  .hero .container .link-confirma-presenca {
+    max-width: 200px;
+    justify-content: center;
+    margin: 20px auto 0;
+    display: flex;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background: linear-gradient(#fff, orange, #ff0);
+}
+
+@media (width <= 640px) {
+  .container {
+    max-width: 80%;
+    padding: 8px;
+  }
+}
+
+@media (width <= 1024px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+.container-content {
+  max-width: 900px;
+  justify-content: space-between;
+  margin: 48px auto 0;
+  display: flex;
+}
+
+.container-content .content-left__title {
+  margin-bottom: 8px;
+  font-size: 32px;
+}
+
+.container-content .content-left__list {
+  margin-top: 16px;
+  list-style: none;
+}
+
+.container-content .content-left__list__item {
+  padding: 8px;
+}
+
+/*# sourceMappingURL=main.css.map */
