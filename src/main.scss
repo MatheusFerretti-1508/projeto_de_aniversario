@@ -25,9 +25,31 @@ body {
 
 .container-content {
     display:flex;
-    justify-content: space-between;
     margin: 48px auto;
     max-width: 600px;
+
+    @media (max-width:640px) {
+        margin: 24px auto;
+        max-width: 80%;
+        width: 100%;
+
+        .content-left {
+            &__title {
+                font-size: 18px;
+                white-space: nowrap;
+            }
+            &__list {
+            &__item {
+                font-size: 14px;
+            }
+        }
+    }
+    .content-right {
+        &__img {
+            margin-top: 42px;
+            margin-left: -24px;
+        }
+    }
 
     .content-left {
         &__title {
@@ -49,4 +71,5 @@ body {
             height: 100px;
         }
     }
+}
 }

@@ -70,6 +70,10 @@
         
         &__lista {
             list-style: none;
+
+            &__item {
+                padding: 4px;
+            }
         }
     }
 
